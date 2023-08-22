@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 
 
 # load the data
-df_price = pd.read_csv('/Users/karinapopova/Desktop/JEDHA/M11_CERTIF/C_depl/get_around_pricing_project.csv')
-df_delay = pd.read_excel('/Users/karinapopova/Desktop/JEDHA/M11_CERTIF/C_depl/get_around_delay_analysis.xlsx')
+df_price = pd.read_csv('get_around_pricing_project.csv')
+df_delay = pd.read_excel('get_around_delay_analysis.xlsx')
 # create a sub-dataset where we have information about previous rentals.
 df_previous_rental_known = df_delay[df_delay['previous_ended_rental_id'].notna()]
 
